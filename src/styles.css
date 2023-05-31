@@ -1,0 +1,74 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  margin: "0px";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  /* max-width: auto;
+  max-height: auto; */
+  border-radius: 50%;
+  background-color: lightcyan;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.circle:hover {
+  background-color: lightseagreen;
+}
+
+.count {
+  font-size: 48px;
+  margin: 20px;
+}
+
+.arrow-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-icon {
+  margin: 10px;
+  cursor: pointer;
+  font-size: 52px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-icon:hover {
+  transform: scale(2);
+  color: blue;
+}
+
+.icon-up {
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-down {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-left {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
